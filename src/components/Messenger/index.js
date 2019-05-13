@@ -1,14 +1,13 @@
 import React from 'react'
 import { Route } from 'react-router-dom'
 
-import Threads from './Threads'
-import Chat from './Chat/Chat'
+import ThreadsContainer from './ThreadsContainer'
+import ChatContainer from './Chat/ChatContainer'
 
-const Messenger = () => (
+const Messenger = ({ match }) => (
   <div className="messenger">
-    <Threads />
-    <Route path={`/messages/:username`} component={Chat} />
+    <ThreadsContainer />
+    <Route path={`${match.path}/:username`} component={ChatContainer} />
   </div>
 )
-
 export default Messenger
