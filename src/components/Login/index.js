@@ -4,6 +4,8 @@ import Input from "../Form/Input";
 import { logIn } from "../../api/auth";
 import "./Login.css";
 
+import P from "../Form/P"
+
 class Login extends Component {
   constructor() {
     super();
@@ -69,16 +71,10 @@ class Login extends Component {
         <p style={{ paddingTop: "10px" }}>
           Disclaimer, this network is highly addictive.
         </p>
-        <p
-          style={{
-            paddingTop: "10px",
-            paddingLeft: "10px",
-            borderLeft: "4px solid grey"
-          }}
-        >
+        <P quote>
           "My friends went from a few dozens to a few thousand after I joined
           this network!" - Anonymous
-        </p>
+        </P>
       </form>
     );
   }

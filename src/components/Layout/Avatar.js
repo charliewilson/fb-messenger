@@ -1,8 +1,9 @@
 import React from 'react'
+import AvatarImg from './AvatarImg'
 
 const Avatar = ({ username, size = "medium" }) => (
-  <img
-    className={`avatar ${size}`}
+  <AvatarImg
+    large
     src={`/images/${username}_lg.jpg`}
     alt={`${username}`}
   />
